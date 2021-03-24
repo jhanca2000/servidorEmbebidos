@@ -24,7 +24,7 @@ function ESTADO_On_Off(){
   	{
 		console.log("led on");
 		document.getElementById("sensor").innerHTML="led On";
-		message = new Paho.MQTT.Message("On");
+		message = new Paho.MQTT.Message("ON");
    		message.destinationName = "jeancarlos.arizo@unach.edu.ec/test1";
     		client.send(message);
 
