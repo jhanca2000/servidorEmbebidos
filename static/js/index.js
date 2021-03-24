@@ -19,24 +19,26 @@ function LED1_Off(){
 }
 
 function ESTADO_On_Off(){	
+	
+	var i =1;
 
-	for (var i = 1; i = 0; i++) {
-   		if (i % 2 == 0)
-  		{
-			console.log("led off");
-			document.getElementById("sensor").innerHTML="led Off";
-			message = new Paho.MQTT.Message("On");
-    			message.destinationName = "jeancarlos.arizo@unach.edu.ec/test1";
-    			client.send(message);
-  		}
-  		else 
-		{
-			console.log("led off");
-			document.getElementById("sensor").innerHTML="led Off";
-			message = new Paho.MQTT.Message("OFF");
-    			message.destinationName = "jeancarlos.arizo@unach.edu.ec/test1";
-    			client.send(message);
-		}
+   	if (i % 2 == 0)
+  	{
+		console.log("led off");
+		document.getElementById("sensor").innerHTML="led On";
+		message = new Paho.MQTT.Message("On");
+   		message.destinationName = "jeancarlos.arizo@unach.edu.ec/test1";
+    		client.send(message);
+		i=i+1;
+  	}
+	else 
+	{
+		console.log("led off");
+		document.getElementById("sensor").innerHTML="led Off";
+		message = new Paho.MQTT.Message("OFF");
+    		message.destinationName = "jeancarlos.arizo@unach.edu.ec/test1";
+    		client.send(message);
+		i=i+1;
 	}
 }
 
