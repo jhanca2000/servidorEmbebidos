@@ -27,7 +27,7 @@ function ESTADO_On_Off(){
 		message = new Paho.MQTT.Message("On");
    		message.destinationName = "jeancarlos.arizo@unach.edu.ec/test1";
     		client.send(message);
-		i=i+1;
+
   	}
 	else 
 	{
@@ -36,8 +36,8 @@ function ESTADO_On_Off(){
 		message = new Paho.MQTT.Message("OFF");
     		message.destinationName = "jeancarlos.arizo@unach.edu.ec/test1";
     		client.send(message);
-		i=i+1;
 	}
+	i=i+1;
 }
 
 
