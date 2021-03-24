@@ -1,5 +1,5 @@
 //https://www.eclipse.org/paho/clients/js/
-
+var i =1;
 function LED1_On() {
 	//alert("led on");
 	console.log("led on");
@@ -19,8 +19,6 @@ function LED1_Off(){
 }
 
 function ESTADO_On_Off(){	
-	
-	var i =1;
 
    	if (i % 2 == 0)
   	{
