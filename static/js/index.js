@@ -1,5 +1,9 @@
 //https://www.eclipse.org/paho/clients/js/
-var i =1;
+//var i =1; //VARIABLE PARA CENCENDER LED CON EL MIMSO BOTON
+
+//.............................................................................
+
+/* ENCENDER Y APAGAR LED CON 2 BOTONES
 function LED1_On() {
 	//alert("led on");
 	console.log("led on");
@@ -17,8 +21,38 @@ function LED1_Off(){
     	message.destinationName = "jeancarlos.arizo@unach.edu.ec/test1";
     	client.send(message);
 }
+*/
 
+//.............................................................................
+
+/*ENCENDER Y APAGAR LED CON UN OSLO BOTON
 function ESTADO_On_Off(){	
+
+   	if (i % 2 == 0)
+  	{
+		console.log("led on");
+		document.getElementById("sensor").innerHTML="led On";
+		message = new Paho.MQTT.Message("ON");
+   		message.destinationName = "jeancarlos.arizo@unach.edu.ec/test1";
+    		client.send(message);
+
+  	}
+	else 
+	{
+		console.log("led off");
+		document.getElementById("sensor").innerHTML="led Off";
+		message = new Paho.MQTT.Message("OFF");
+    		message.destinationName = "jeancarlos.arizo@unach.edu.ec/test1";
+    		client.send(message);
+	}
+	i=i+1;
+}
+*/
+
+//.............................................................................
+
+// MOSTRAR EL HISTORIAL DE UN SENSOR FISICO CONECTADO AL ESP32
+function HISTORIAL_SENSOR(){	
 
    	if (i % 2 == 0)
   	{
