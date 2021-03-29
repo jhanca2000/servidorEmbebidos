@@ -1,5 +1,5 @@
 //https://www.eclipse.org/paho/clients/js/
-//var i =1; //VARIABLE PARA CENCENDER LED CON EL MIMSO BOTON
+var i =1; //VARIABLE PARA CENCENDER LED CON EL MIMSO BOTON
 
 //.............................................................................
 
