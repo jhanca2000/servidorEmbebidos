@@ -54,7 +54,7 @@ function ESTADO_On_Off(){
 // MOSTRAR EL HISTORIAL DE UN SENSOR FISICO CONECTADO AL ESP32
 function HISTORIAL_SENSOR(){	
 	console.log("led on");
-	document.getElementById("sensor").innerHTML=client.Historial = Historial;
+	document.getElementById("sensor").innerHTML=client.historial = historial;
 	message = new Paho.MQTT.Message("ON");
    	message.destinationName = "jeancarlos.arizo@unach.edu.ec/test1";
     	client.send(message);
