@@ -115,7 +115,7 @@ function HISTORIAL_SENSOR(){
 	  document.getElementById("sensor").innerHTML=message.payloadString;
   }
 
-function Historial(message) {
+function historial(message) {
     console.log("Historial:"+message.payloadString);
 	  document.getElementById("sensor").innerHTML=message.payloadString;
   }
